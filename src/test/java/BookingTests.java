@@ -1,17 +1,16 @@
 import common.BaseTest;
-import common.PropertyHelper;
-import java.io.IOException;
+import helper.PropertiesHelper;
 import org.junit.Assert;
 import org.junit.Test;
-
-
 import pageobject.booking.BookingCalendarPanel;
 import pageobject.booking.BookingMainPage;
 import pageobject.booking.BookingResultsPage;
 
+import java.io.IOException;
+
 
 public class BookingTests extends BaseTest {
-    private PropertyHelper propertiesHelper = new PropertyHelper();
+    private PropertiesHelper propertiesHelper = new PropertiesHelper();
 
     public BookingTests() throws IOException {
     }
