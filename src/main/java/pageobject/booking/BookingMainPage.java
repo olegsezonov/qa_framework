@@ -29,7 +29,6 @@ public class BookingMainPage extends AbstractPage {
     public BookingMainPage(WebDriver webDriver) {
         super(webDriver);
     }
-
     public BookingResultsPage performSearch() {
         searchButton.click();
         return new BookingResultsPage(getWebDriver());
@@ -42,7 +41,7 @@ public class BookingMainPage extends AbstractPage {
     }
 
     public BookingCalendarPanel openTravelingCalendar() {
-        //openCalendarButton.click();
+//        openCalendarButton.click();
         return new BookingCalendarPanel(getWebDriver());
     }
 }

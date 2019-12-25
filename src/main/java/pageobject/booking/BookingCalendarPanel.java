@@ -3,10 +3,15 @@ package pageobject.booking;
 import common.AbstractPage;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class BookingCalendarPanel extends AbstractPage {
+
+    public BookingCalendarPanel(WebDriver webDriver) {
+        super(webDriver);
+    }
 
     @FindBy(xpath = "//div[@data-bui-ref='calendar-prev']")
     private WebElement nextMonthButton;
